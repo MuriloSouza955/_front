@@ -23,15 +23,15 @@ body, html {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .wrap-login {
-  width: 390px;
+  width: 400px;
   background-color: #333;
   border-radius: 10px;
   overflow: hidden;
-  padding: 20px 55px 33px 55px;
+  padding: 35px 55px 33px 55px;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -50,13 +50,14 @@ body, html {
 
 .wrap-input {
   width: 100%;
+  font-size: 50px;
   position: relative;
   border-bottom: 2px solid #adadad;
   margin-bottom: 37px;
 }
 
 .input {
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   line-height: 1.2;
   border: none;
@@ -101,7 +102,7 @@ body, html {
 
 .focus-input::after {
   font-family: Nunito, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   color: #999999;
   line-height: 1.2;
   content: attr(data-placeholder);
@@ -145,7 +146,7 @@ body, html {
 }
 
 .login-form-btn {
-  font-size: 15px;
+  font-size: 18px;
   border: none;
   border-radius: 10px;
   color: #fff;
@@ -175,14 +176,14 @@ body, html {
 }
 
 .txt1 {
-  font-size: 14px;
+  font-size: 20px;
   color: #adadad;
   line-height: 1.5;
   padding-right: 5px;
 }
 
 .txt2 {
-  font-size: 14px;
+  font-size: 20px;
   color: #fdca21;
   line-height: 1.5;
   text-decoration: none;

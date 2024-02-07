@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import App from "./components/App";
+import Cadastro from "./components/Cadastro";
 
 export default function Home() {
   return (
       <main>
-        <App />
+        <Cadastro />
       </main>
   );
 }
