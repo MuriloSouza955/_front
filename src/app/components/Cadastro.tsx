@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import "./style.css";
-import { validateEmail } from "../../utils/validateCadastro";
+import { validateEmail } from "./validateCadastro";
 
 export default function Cadastro() {
   const [nome, setNome] = useState("");
@@ -72,4 +72,7 @@ export default function Cadastro() {
       </div>
     </div>
   );
+  console.log(nome);
+  console.log(email);
+  console.log(qtdeKW);
 }
