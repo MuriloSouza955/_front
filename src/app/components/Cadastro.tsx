@@ -7,19 +7,19 @@ export default function Cadastro() {
   const [email, setEmail] = useState("");
   const [qtdeKW, setQtdeKW] = useState("");
   const [valorKW, setValorKW] = useState("");
-  const [emailErr, setEmailErr] = useState(false);
 
   return (
     <div className="container-login">
       <div className="wrap-login">
         <form className="login-form">
           <div className="wrap-input">
-            <input
+            <input          
               className={nome !== "" ? "has-val input" : "input"}
               type="name"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
             />
+            
             <span
               className="focus-input"
               data-placeholder="Nome completo"
@@ -33,7 +33,6 @@ export default function Cadastro() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            {emailErr && <p>Digite um email válido</p>}
 
             <span className="focus-input" data-placeholder="Email"></span>
           </div>
@@ -78,7 +77,4 @@ export default function Cadastro() {
       </div>
     </div>
   );
-  console.log(nome);
-  console.log(email);
-  console.log(qtdeKW);
 }
