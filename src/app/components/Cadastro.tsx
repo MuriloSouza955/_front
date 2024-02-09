@@ -1,21 +1,14 @@
 "use client";
 import { useState } from "react";
 import "./style.css";
-import { validateEmail } from "./validateCadastro";
 
 export default function Cadastro() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [qtdeKW, setQtdeKW] = useState("");
+  const [valorKW, setValorKW] = useState("");
   const [emailErr, setEmailErr] = useState(false);
 
-  const validate = () => {
-    if (!validateEmail.test(email)) {
-      setEmailErr(true);
-    } else {
-      setEmailErr(false);
-    }
-  };
   return (
     <div className="container-login">
       <div className="wrap-login">
@@ -54,7 +47,20 @@ export default function Cadastro() {
             />
             <span
               className="focus-input"
-              data-placeholder="Quantidade de KW"
+              data-placeholder="Potência total do sistema"
+            ></span>
+          </div>
+
+          <div className="wrap-input">
+            <input
+              className={valorKW !== "" ? "has-val input" : "input"}
+              type="number"
+              value={valorKW}
+              onChange={(e) => setValorKW(e.target.value)}
+            />
+            <span
+              className="focus-input"
+              data-placeholder="Taxa de consumo atual em R$"
             ></span>
           </div>
 
