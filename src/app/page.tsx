@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Cadastro from "./components/Cadastro";
+import Cadastro from "./components/CadastroInicial";
 
 
 

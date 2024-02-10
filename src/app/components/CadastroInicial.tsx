@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import "./style.css";
+// import FormWithJS from "./js-form"
 
 export default function Cadastro() {
   const [nome, setNome] = useState("");
@@ -11,13 +12,16 @@ export default function Cadastro() {
   return (
     <div className="container-login">
       <div className="wrap-login">
-        <form className="login-form">
+        <form className="login-form"
+        >
           <div className="wrap-input">
             <input          
               className={nome !== "" ? "has-val input" : "input"}
               type="name"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
+              autoComplete="off"
+              id = "nome" required
             />
             
             <span
@@ -32,6 +36,8 @@ export default function Cadastro() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              autoComplete="off"
+              id = "email" required
             />
 
             <span className="focus-input" data-placeholder="Email"></span>
@@ -43,6 +49,7 @@ export default function Cadastro() {
               type="number"
               value={qtdeKW}
               onChange={(e) => setQtdeKW(e.target.value)}
+              id = "qtdeKW" required
             />
             <span
               className="focus-input"
@@ -56,6 +63,7 @@ export default function Cadastro() {
               type="number"
               value={valorKW}
               onChange={(e) => setValorKW(e.target.value)}
+              id = "valorKW" required
             />
             <span
               className="focus-input"
@@ -65,8 +73,7 @@ export default function Cadastro() {
 
           <div className="container-login-form-btn">
             <button className="login-form-btn">Enviar</button>
-          </div>
-
+          </div>          
           <div className="text-center">
             <span className="txt1">Não possui conta? </span>
             <a className="txt2" href="#">

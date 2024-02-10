@@ -7,7 +7,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   font-family: Nunito, sans-serif;
 }
 
@@ -57,7 +58,7 @@ body, html {
 }
 
 .input {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   line-height: 1.2;
   border: none;
@@ -102,7 +103,7 @@ body, html {
 
 .focus-input::after {
   font-family: Nunito, sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   color: #999999;
   line-height: 1.2;
   content: attr(data-placeholder);
