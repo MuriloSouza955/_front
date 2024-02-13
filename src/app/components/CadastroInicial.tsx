@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import "./style.css";
-// import FormWithJS from "./js-form"
 
 export default function Cadastro() {
   const [nome, setNome] = useState("");

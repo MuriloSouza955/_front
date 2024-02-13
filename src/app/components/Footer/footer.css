@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 25px;
+    gap: 5px;
+    background: -webkit-linear-gradient(to right, #fdee21, #ff2121, #fdee21);
+    background: -o-linear-gradient(to right, #fdee21, #ff2121, #fdee21);
+    background: -moz-linear-gradient(to right, #fdee21, #ff2121, #fdee21);
+    background: linear-gradient(to right, #fdee21, #ff2121, #fdee21);
+    line-height: 1.2;
+    border-radius: 15px;
+}
+
+.logo {
+    display: flex;
+    gap: 50px;
+}
