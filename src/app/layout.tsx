@@ -21,17 +21,19 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header className={'p-5 flex justify-between'}>
-          <Image
-            src="/controller-solar-logo.svg"
-            width={200}
-            height={40}
-            alt="Logo Controller Solar"
-          />
+          <a href="/">
+            <Image
+              src="/controller-solar-logo.svg"
+              width={200}
+              height={40}
+              alt="Logo Controller Solar"
+            />
+          </a>
           <Link href="/">Entrar</Link>
         </header>
         {children}
         <footer>
-          <Footer/>
+          <Footer />
         </footer>
       </body>
     </html>

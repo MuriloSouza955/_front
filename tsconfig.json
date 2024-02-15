@@ -32,7 +32,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/components/app.js"
+    "src/app/components/app.js",
+    "src/app/components/cadastroInversor"
   ],
   "exclude": [
     "node_modules"

@@ -1,11 +1,13 @@
-import Cadastro from "./components/CadastroInicial";
-import PoliticaPrivacidade from "./components/termos/politica-de-privacidade";
-import TermoDeUso from "./components/termos/temro-de-uso";
+import CadastroCredenciamneto1 from "./components/cadastroCredenciamento1/cadastroCredenciamento1";
+import CadastroInicial from "./components/cadastroInicial/CadastroInicial";
+import CadastroInversor from "./components/cadastroInversor/cadastroInversor";
 
 export default function Home() {
   return (
-      <main>
-        <TermoDeUso />
-      </main>
+    <main>
+      <CadastroInicial />
+      <CadastroCredenciamneto1 />
+      <CadastroInversor />
+    </main>
   );
 }
